@@ -8,12 +8,14 @@ header>h1 {
   margin: 0;
   width: 90%;
   font-size: 1.5 rem;
+  color: #800000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
-  background-color: #333;
+  background-color: #ffffff;
   height: 10vh;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -23,7 +25,6 @@ header {
 img {
   width: 4%;
   height: auto;
-  margin-right: 10px;
 }
 
 #mslogo {
@@ -36,30 +37,37 @@ img {
 }
 
 .sidebar {
-  width: 200px;
-  background-color: #f4f4f4;
-  padding: 15px;
+  width: 5%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sidebar ul {
-  list-style: none;
-  padding: 0;
+
+#Homelogo,
+#Analysislogo {
+  width: 60%;
+  height: auto;
+  margin-top: 100%;
 }
 
-.sidebar li {
-  margin: 15px 0;
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sidebar a {
-  text-decoration: none;
-  color: #333;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
 
 .content {
   flex: 1;
-  padding: 20px;
+  width: 95%;
+  background-color: #d8cbcb;
+  padding: 1%;
+
+}
+
+h2 {
+  margin: 0%;
 }

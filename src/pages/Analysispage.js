@@ -1,6 +1,6 @@
 import React from "react";
 
-function AnalysisPage() {
+function Analysispage() {
     return (
         <div>
             <h2>Analysis Page</h2>
@@ -9,4 +9,4 @@ function AnalysisPage() {
     );
 }
 
-export default AnalysisPage;
+export default Analysispage;

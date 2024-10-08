@@ -64,7 +64,12 @@ a {
   flex: 1;
   width: 95%;
   background-color: #d8cbcb;
-  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  border: 3px solid black;
+  border-right: 0px;
+  border-bottom: 0px;
 
 }
 

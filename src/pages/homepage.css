@@ -5,3 +5,81 @@ h2 {
     padding: 0;
     color: #4d0000;
 }
+
+#title_div {
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5%;
+}
+
+#churn_filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    margin-right: 10%;
+}
+
+#churn_filter>h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #4d0000;
+}
+
+#kpi_div {
+    margin-top: 1%;
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    width: 98%;
+    padding-left: 3%;
+}
+
+#kpi {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 22%;
+    height: 100%;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: #e2e1c0 !important;
+    margin-left: 1%;
+    padding: 0;
+}
+
+
+#graph_div {
+
+    margin-top: 1%;
+    display: flex;
+
+    flex-direction: row;
+    height: 28vh;
+    width: 98%;
+    padding-left: 3%;
+
+}
+
+#pigraph,
+#graph {
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    height: 100%;
+    border: 3px solid #9d9c85;
+    border-radius: 8px;
+    background-color: #ffffff !important;
+    margin-left: 1%;
+    padding: 0;
+}
+
+#graph {
+    margin-left: 1%;
+    width: 33.7%
+}

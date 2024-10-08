@@ -14,7 +14,7 @@ header>h1 {
 
 header {
   background-color: #ffffff;
-  height: 10vh;
+  height: 8vh;
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -23,8 +23,12 @@ header {
 }
 
 img {
-  width: 4%;
+  width: 3%;
   height: auto;
+}
+
+#thdlogo {
+  width: 4%;
 }
 
 #mslogo {

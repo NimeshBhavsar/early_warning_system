@@ -2,10 +2,10 @@ import React from "react";
 import './homepage.css';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
-
+import { Link } from "react-router-dom";
 
 function Homepage() {
-    const label = { inputProps: { 'aria-label': 'Switch demo' } };
+
     const IOSSwitch = styled((props) => (
         <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
     ))(({ theme }) => ({
@@ -78,15 +78,29 @@ function Homepage() {
                 </div>
 
             </div>
+
             <div id='kpi_div'>
-                <div id='kpi'>a</div>
-                <div id='kpi'>a</div>
-                <div id='kpi'>a</div>
-                <div id='kpi'>a</div>
+                <div id='kpi'>
+                    <h3>Customer Churn Risk</h3>
+                    <h3>1000</h3>
+                </div>
+                <div id='kpi'>
+                    <h3>Average Transaction</h3>
+                    <h3>1000</h3>
+                </div>
+                <div id='kpi'>
+                    <h3>Login Frequency Days</h3>
+                    <h3>1000</h3>
+                </div>
+                <div id='kpi'>
+                    <h3>Average Time Spent</h3>
+                    <h3>1000</h3>
+                </div>
             </div>
 
             <div id='graph_div'>
-                <div id='pigraph'>a</div>
+                <div id='pigraph'>
+                    <Link to='/Analysis'>a</Link></div>
                 <div id='graph'>a</div>
                 <div id='graph'>a</div>
             </div>

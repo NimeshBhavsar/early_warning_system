@@ -38,12 +38,14 @@ h2 {
     height: 15vh;
     width: 91.5%;
     padding-left: 3%;
+    
 }
 
 #kpi {
     width: 25%;
     height: 100%;
     border: 3px solid black;
+    
     border-radius: 8px;
     background-color: #e2e1c0 !important;
     margin-left: 1%;
@@ -54,8 +56,20 @@ h2 {
     padding: 0;
     width: 50%;
     color: #800000;
+    margin-top: 10px;
     font-weight: bold;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#kpi > h2{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    color: #400000;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

@@ -89,19 +89,19 @@ function Homepage() {
             <div id='kpi_div'>
                 <div id='kpi'>
                     <h3>Customer Churn Risk</h3>
-                    <h2>1000</h2>
+                    <h2>24%</h2>
                 </div>
                 <div id='kpi'>
                     <h3>Average Transaction</h3>
-                    <h2>1000</h2>
+                    <h2>$3019</h2>
                 </div>
                 <div id='kpi'>
-                    <h3>Login Frequency Days</h3>
-                    <h2>1000</h2>
+                    <h3>Average Login Frequency Days</h3>
+                    <h2>15</h2>
                 </div>
                 <div id='kpi'>
                     <h3>Average Time Spent</h3>
-                    <h2>1000</h2>
+                    <h2>32 min</h2>
                 </div>
             </div>
 

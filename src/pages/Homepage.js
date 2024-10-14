@@ -3,8 +3,15 @@ import './homepage.css';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 import { Link } from "react-router-dom";
-
+import GenderPieChart from '../charts/gender_pie_chart.png';
+import PrefferedOfferTypePieChart from '../charts/preffered_offer_type_pie_chart.png';
+import MembershipCategoryBarGraph from '../charts/membership_category_bar_graph.png';
+import ChurnRiskScoreBarGraph from '../charts/churn_risk_score_bar_graph.png';
+import PointsInWalletHistogram from '../charts/points_in_wallet_histogram.png';
+import FeedbackBarGraph from '../charts/feedback_bar_graph.png';
 function Homepage() {
+
+    
 
     const IOSSwitch = styled((props) => (
         <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -82,32 +89,49 @@ function Homepage() {
             <div id='kpi_div'>
                 <div id='kpi'>
                     <h3>Customer Churn Risk</h3>
-                    <h3>1000</h3>
+                    <h2>1000</h2>
                 </div>
                 <div id='kpi'>
                     <h3>Average Transaction</h3>
-                    <h3>1000</h3>
+                    <h2>1000</h2>
                 </div>
                 <div id='kpi'>
                     <h3>Login Frequency Days</h3>
-                    <h3>1000</h3>
+                    <h2>1000</h2>
                 </div>
                 <div id='kpi'>
                     <h3>Average Time Spent</h3>
-                    <h3>1000</h3>
+                    <h2>1000</h2>
                 </div>
             </div>
 
             <div id='graph_div'>
                 <div id='pigraph'>
-                    <Link to='/Analysis'>a</Link></div>
-                <div id='graph'>a</div>
-                <div id='graph'>a</div>
+                    <p>Gender</p>
+                    <img src={GenderPieChart} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                </div>
+                <div id='graph'>
+                    <p>Membership Category</p>
+                    <img src={MembershipCategoryBarGraph} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                </div>
+                <div id='graph'>
+                    <p>Feedback</p>
+                    <img src={FeedbackBarGraph} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                </div>
             </div>
             <div id='graph_div'>
-                <div id='pigraph'>a</div>
-                <div id='graph'>a</div>
-                <div id='graph'>a</div>
+                <div id='pigraph'>
+                    <p>Preffered Offer Type</p>
+                    <img src={PrefferedOfferTypePieChart} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                </div>
+                <div id='graph'>
+                    <p>Churn Risk Score</p>
+                    <img src={ChurnRiskScoreBarGraph} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                </div>
+                <div id='graph'>
+                    <p>Points in wallet</p>
+                    <img src={PointsInWalletHistogram} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                </div>
             </div>
         </div>
     );

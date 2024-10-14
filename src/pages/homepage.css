@@ -1,3 +1,4 @@
+
 h2 {
     font-size: 2em;
     font-weight: bold;
@@ -32,25 +33,30 @@ h2 {
 
 #kpi_div {
     margin-top: 1%;
-    display: inline-block;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     height: 15vh;
-    width: 98%;
+    width: 91.5%;
     padding-left: 3%;
 }
 
 #kpi {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 22%;
+    width: 25%;
     height: 100%;
     border: 3px solid black;
     border-radius: 8px;
     background-color: #e2e1c0 !important;
     margin-left: 1%;
     padding: 0;
+}
+#kpi > h3 {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    color: #800000;
+    font-weight: bold;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -69,7 +75,7 @@ h2 {
 #pigraph,
 #graph {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;;
     width: 22%;
     height: 100%;
     border: 3px solid #9d9c85;
@@ -77,9 +83,64 @@ h2 {
     background-color: #ffffff !important;
     margin-left: 1%;
     padding: 0;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 #graph {
     margin-left: 1%;
     width: 33.7%
 }
+
+
+#GenderPieChart{
+    width: auto;
+    height: 90%;
+}
+
+#pigraph > p{
+    margin: 0px;
+    color: #800000;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+#graph > p{
+    margin: 0px;
+    color: #800000;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+
+#GenderPieChart{
+    width: auto;
+    height: 90%;
+}
+
+
+#GenderPieChart{
+    width: auto;
+    height: 90%;
+}
+
+
+#GenderPieChart{
+    width: auto;
+    height: 90%;
+}
+
+
+#GenderPieChart{
+    width: auto;
+    height: 90%;
+}
+
+
+#GenderPieChart{
+    width: auto;
+    height: 90%;
+}
+
+

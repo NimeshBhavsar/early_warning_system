@@ -28,7 +28,9 @@ img {
 }
 
 #thdlogo {
-  width: 4%;
+  margin-top: 10px;
+  rotate: -45deg;
+  width: 5%;
 }
 
 #mslogo {

@@ -8,7 +8,6 @@ SELECT ProductID, SUM(Quantity * Price) AS TotalRevenue
 FROM Sales
 WHERE SaleDate = '2023-09-05'
 GROUP BY ProductID;
-
 -- 3. Find the employee with the highest performance rating. Display the Rating and Year
 SELECT TOP 1
     EmployeeID, Rating, Year

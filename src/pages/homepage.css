@@ -40,6 +40,35 @@ h2 {
     padding-left: 3%;
     
 }
+#kpi {
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    height: 100%;
+    border: 3px solid #9d9c85;
+    border-radius: 8px;
+    background-color: #ffffff !important;
+    margin-left: 1%;
+    padding: 0;
+    overflow:hidden;
+    align-items: center;
+    justify-content: center;
+}
+#kpi_info{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#kpi_logo{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #kpi {
     width: 25%;
@@ -50,8 +79,12 @@ h2 {
     background-color: #e2e1c0 !important;
     margin-left: 1%;
     padding: 0;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
-#kpi > h3 {
+/* 
+#kpi_info > h3 {
     margin: 0;
     padding: 0;
     width: 50%;
@@ -71,12 +104,12 @@ h2 {
     margin-top: 15px;
     margin-left: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} */
 
 
 #graph_div {
 
-    margin-top: 1%;
+    margin-top: 2%;
     display: flex;
 
     flex-direction: row;
@@ -108,7 +141,7 @@ h2 {
 }
 
 
-#GenderPieChart{
+#GenderPieChart,#MembershipCategoryBarGraph,#FeedbackBarGraph,#PrefferedOfferTypePieChart,#ChurnRiskScoreBarGraph,#PointsInWalletHistogram{
     width: auto;
     height: 90%;
 }

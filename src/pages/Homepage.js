@@ -9,6 +9,13 @@ import MembershipCategoryBarGraph from '../charts/membership_category_bar_graph.
 import ChurnRiskScoreBarGraph from '../charts/churn_risk_score_bar_graph.png';
 import PointsInWalletHistogram from '../charts/points_in_wallet_histogram.png';
 import FeedbackBarGraph from '../charts/feedback_bar_graph.png';
+import kpi2_logo from '../resources/kpi2_logo.png';
+import kpi3_logo from '../resources/kpi3_logo.png';
+import kpi4_logo from '../resources/kpi4_logo.png';
+import speed1 from '../resources/speed1.png';
+import speed2 from '../resources/speed2.png';
+import speed3 from '../resources/speed3.png';
+import speed4 from '../resources/speed4.png';
 function Homepage() {
 
     
@@ -74,63 +81,100 @@ function Homepage() {
         },
     }));
 
+    const handle_churn_risk_button = (event) => {
+        console.log(event.target.checked);
+        console.log(document.querySelector('#kpi_info h2'));
+        if (event.target.checked) {
+            document.querySelector('#kpi_info h2').innerText = '100%';
+            document.querySelectorAll('#kpi_info h2')[1].innerText = '$2019';
+            document.querySelectorAll('#kpi_info h2')[2].innerText = '20';
+            document.querySelectorAll('#kpi_info h2')[3].innerText = '20 min';
+            document.querySelector('#kpi #kpi_logo').src = speed4;
+            document.querySelector('#kpi #kpi_logo').alt = 'speed4';
+        }
+        else {
+            document.querySelector('#kpi_info h2').innerText = '24%';
+            document.querySelectorAll('#kpi_info h2')[1].innerText = '$3019';
+            document.querySelectorAll('#kpi_info h2')[2].innerText = '15';
+            document.querySelectorAll('#kpi_info h2')[3].innerText = '32 min';
+            document.querySelector('#kpi #kpi_logo').src = speed2;
+            document.querySelector('#kpi #kpi_logo').alt = 'speed2';
+        }
+    };
+
+    const navigateToAnalysis = (chartType) => {
+        window.history.pushState({}, '', `/analysis?chart=${chartType}`);
+        const navEvent = new PopStateEvent('popstate');
+        window.dispatchEvent(navEvent);
+    };
+
     return (
         <div>
-
             <div id='title_div'>
                 <h2>Dashboard</h2>
                 <div id='churn_filter'>
                     <h2>Churning Customers only</h2>
-                    <IOSSwitch />
+                    <IOSSwitch onChange={handle_churn_risk_button}/>
                 </div>
-
             </div>
 
             <div id='kpi_div'>
                 <div id='kpi'>
+                    <div id='kpi_info'>
                     <h3>Customer Churn Risk</h3>
                     <h2>24%</h2>
+                    </div>
+                    <img src={speed2} id="kpi_logo" alt="speed2"/>
                 </div>
                 <div id='kpi'>
+                    <div id='kpi_info'>
                     <h3>Average Transaction</h3>
                     <h2>$3019</h2>
+                    </div>
+                    <img src={kpi2_logo} id="kpi_logo" />
                 </div>
                 <div id='kpi'>
+                    <div id='kpi_info'>
                     <h3>Average Login Frequency Days</h3>
                     <h2>15</h2>
+                    </div>
+                    <img src={kpi3_logo} id="kpi_logo" />
                 </div>
                 <div id='kpi'>
+                    <div id='kpi_info'>
                     <h3>Average Time Spent</h3>
                     <h2>32 min</h2>
+                    </div>
+                    <img src={kpi4_logo} id="kpi_logo" />
                 </div>
             </div>
 
             <div id='graph_div'>
                 <div id='pigraph'>
                     <p>Gender</p>
-                    <img src={GenderPieChart} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                    <img src={GenderPieChart} id="GenderPieChart" onClick={() => navigateToAnalysis('gender')} />
                 </div>
                 <div id='graph'>
                     <p>Membership Category</p>
-                    <img src={MembershipCategoryBarGraph} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                    <img src={MembershipCategoryBarGraph} id="MembershipCategoryBarGraph" onClick={() => navigateToAnalysis('membership')} />
                 </div>
                 <div id='graph'>
                     <p>Feedback</p>
-                    <img src={FeedbackBarGraph} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                    <img src={FeedbackBarGraph} id="FeedbackBarGraph" onClick={() => navigateToAnalysis('feedback')} />
                 </div>
             </div>
             <div id='graph_div'>
                 <div id='pigraph'>
                     <p>Preffered Offer Type</p>
-                    <img src={PrefferedOfferTypePieChart} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                    <img src={PrefferedOfferTypePieChart} id="PrefferedOfferTypePieChart" onClick={() => navigateToAnalysis('offerType')} />
                 </div>
                 <div id='graph'>
                     <p>Churn Risk Score</p>
-                    <img src={ChurnRiskScoreBarGraph} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                    <img src={ChurnRiskScoreBarGraph} id="ChurnRiskScoreBarGraph" onClick={() => navigateToAnalysis('churnRisk')} />
                 </div>
                 <div id='graph'>
                     <p>Points in wallet</p>
-                    <img src={PointsInWalletHistogram} id="GenderPieChart" onClick={() => window.location.href = '/analysis'} />
+                    <img src={PointsInWalletHistogram} id="PointsInWalletHistogram" onClick={() => navigateToAnalysis('pointsInWallet')} />
                 </div>
             </div>
         </div>

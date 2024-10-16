@@ -156,25 +156,25 @@ function Homepage() {
                 </div>
                 <div id='graph'>
                     <p>Membership Category</p>
-                    <img src={MembershipCategoryBarGraph} id="MembershipCategoryBarGraph" onClick={() => navigateToAnalysis('membership')} />
+                    <img src={MembershipCategoryBarGraph} id="MembershipCategoryBarGraph" onClick={() => navigateToAnalysis('membership_category')} />
                 </div>
                 <div id='graph'>
                     <p>Feedback</p>
-                    <img src={FeedbackBarGraph} id="FeedbackBarGraph" onClick={() => navigateToAnalysis('feedback')} />
+                    <img src={FeedbackBarGraph} id="FeedbackBarGraph"  onClick={() => navigateToAnalysis('feedback')} />
                 </div>
             </div>
             <div id='graph_div'>
                 <div id='pigraph'>
                     <p>Preffered Offer Type</p>
-                    <img src={PrefferedOfferTypePieChart} id="PrefferedOfferTypePieChart" onClick={() => navigateToAnalysis('offerType')} />
+                    <img src={PrefferedOfferTypePieChart} id="PrefferedOfferTypePieChart" onClick={() => navigateToAnalysis('preferred_offer_types')} />
                 </div>
                 <div id='graph'>
                     <p>Churn Risk Score</p>
-                    <img src={ChurnRiskScoreBarGraph} id="ChurnRiskScoreBarGraph" onClick={() => navigateToAnalysis('churnRisk')} />
+                    <img src={ChurnRiskScoreBarGraph} id="ChurnRiskScoreBarGraph" onClick={() => navigateToAnalysis('churn_risk_score')} />
                 </div>
                 <div id='graph'>
                     <p>Points in wallet</p>
-                    <img src={PointsInWalletHistogram} id="PointsInWalletHistogram" onClick={() => navigateToAnalysis('pointsInWallet')} />
+                    <img src={PointsInWalletHistogram} id="PointsInWalletHistogram" onClick={() => navigateToAnalysis('points_in_wallet')} />
                 </div>
             </div>
         </div>

@@ -113,3 +113,9 @@ option{
     height: 100%;
     background-color: #ffffff;
 }
+
+#output_chart img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}

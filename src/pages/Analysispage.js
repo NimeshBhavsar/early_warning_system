@@ -23,6 +23,45 @@ import AveFrequencyLoginDaysHistogram from '../charts/avg_freq_login_histogram.p
 import AgeDensity from '../charts/age_density_plot.png';
 import GenderBarGraph from '../charts/gender_bar_chart.png';
 import FeedbackPieChart from '../charts/feedback_pie_chart.png';
+import AgeVsGenderLolipop from '../charts/age Vs Gender_Lollipop.png';
+import AgeVsFeedbackLolipop from '../charts/age Vs feedback_Lollipop.png';
+import AgeVsJoinedThroughReferralLolipop from '../charts/age Vs joined_through_referral_Lollipop.png';
+import AgeVsMembershipCategoryLolipop from '../charts/age Vs membership_category_Lollipop.png';
+import AgeVsUsedSpecialDiscountLolipop from '../charts/age Vs used_special_discount_Lollipop.png';
+import AgeVsOfferApplicationPreferenceLolipop from '../charts/age Vs offer_application_preference_Lollipop.png';
+import AgeVsRegionCategoryLolipop from '../charts/age Vs region_category_Lollipop.png';
+import AgeVsMediumOfOperationLolipop from '../charts/age Vs medium_of_operation_Lollipop.png';
+import AgeVsPrefferedOfferTypeLolipop from '../charts/age Vs prefered_offer_type_Lollipop.png';
+import AgeVsInternetOptionLolipop from '../charts/age Vs internet_option_Lollipop.png';
+import AgeVsComplaintStatusLolipop from '../charts/age Vs complaint_status_Lollipop.png';
+import AvgFreqVsGenderLolipop from '../charts/avg_frequency_login_days Vs gender_lollipop.png';
+import AvgFreqVsJoinedThroughReferralLolipop from '../charts/avg_frequency_login_days Vs joined_through_referral_lollipop.png';
+import AvgFreqVsMembershipCategoryLolipop from '../charts/avg_frequency_login_days Vs membership_category_lollipop.png';
+import AvgFreqVsUsedSpecialDiscountLolipop from '../charts/avg_frequency_login_days Vs used_special_discount_lollipop.png';
+import AvgFreqVsOfferApplicationPreferenceLolipop from '../charts/avg_frequency_login_days Vs offer_application_preference_lollipop.png';
+import AvgFreqVsRegionCategoryLolipop from '../charts/avg_frequency_login_days Vs region_category_lollipop.png';
+import AvgFreqVsFeedbackLolipop from '../charts/avg_frequency_login_days Vs feedback_lollipop.png';
+import AvgFreqVsMediumOfOperationLolipop from '../charts/avg_frequency_login_days Vs medium_of_operation_lollipop.png';
+import AvgFreqVsPrefferedOfferTypeLolipop from '../charts/avg_frequency_login_days Vs preferred_offer_types_lollipop.png';
+import AvgFreqVsInternetOptionLolipop from '../charts/avg_frequency_login_days Vs internet_option_lollipop.png';
+import AvgFreqVsComplaintStatusLolipop from '../charts/avg_frequency_login_days Vs complaint_status_lollipop.png';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function Analysispage() {
 
@@ -72,10 +111,47 @@ function Analysispage() {
                 'churn_risk_score': ChurnRiskScoreBarGraph,
                 // Add other mappings as needed
             },
-            // 'age': {
-            //     'church_risk_score': ,
+            'age': {
+                'age': AgeHistogram,
+                'gender': AgeVsGenderLolipop,
+                'feedback': AgeVsFeedbackLolipop,
+                'preferred_offer_types': AgeVsPrefferedOfferTypeLolipop,
+                'points_in_wallet':PointsInWalletHistogram,
+                'membership_category': AgeVsMembershipCategoryLolipop,
+                'joined_through_referral': AgeVsJoinedThroughReferralLolipop,
+                'used_special_discount': AgeVsUsedSpecialDiscountLolipop,
+                'offer_application_preference': AgeVsOfferApplicationPreferenceLolipop,
+                'region_category': AgeVsRegionCategoryLolipop,
+                'medium_of_operation': AgeVsMediumOfOperationLolipop,
+                'internet_option': AgeVsInternetOptionLolipop,
+                'complaint_status': AgeVsComplaintStatusLolipop,
+                'avg_time_spent': AvgTimeSpentHistogram,
+                'avg_transaction_value': AvgTransactionValueHistogram,
+                'avg_frequency_login_days': AveFrequencyLoginDaysHistogram,
+                'churn_risk_score': ChurnRiskScoreBarGraph,
 
-            // }
+            },
+            'avg_frequency_login_days': {
+                'age': AvgFreqVsGenderLolipop,
+                'gender': AvgFreqVsGenderLolipop,
+                'feedback': AvgFreqVsFeedbackLolipop,
+                'preferred_offer_types': AvgFreqVsPrefferedOfferTypeLolipop,
+                'points_in_wallet':PointsInWalletHistogram,
+                'membership_category': AvgFreqVsMembershipCategoryLolipop,
+                'joined_through_referral': AvgFreqVsJoinedThroughReferralLolipop,
+                'used_special_discount': AvgFreqVsUsedSpecialDiscountLolipop,
+
+                'offer_application_preference': AvgFreqVsOfferApplicationPreferenceLolipop,
+                'region_category': AvgFreqVsRegionCategoryLolipop,
+                'medium_of_operation': AvgFreqVsMediumOfOperationLolipop,
+                'internet_option': AvgFreqVsInternetOptionLolipop,
+                'complaint_status': AvgFreqVsComplaintStatusLolipop,
+                'avg_time_spent': AvgTimeSpentHistogram,
+                'avg_transaction_value': AvgTransactionValueHistogram,
+                'avg_frequency_login_days': AveFrequencyLoginDaysHistogram,
+                'churn_risk_score': ChurnRiskScoreBarGraph
+
+            }
             // Add other type1 mappings as needed
         };
         const imageMappingalt1 = {

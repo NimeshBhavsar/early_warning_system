@@ -142,9 +142,18 @@ h2 {
 
 
 #GenderPieChart,#MembershipCategoryBarGraph,#FeedbackBarGraph,#PrefferedOfferTypePieChart,#ChurnRiskScoreBarGraph,#PointsInWalletHistogram{
-    width: auto;
+    width: 90%;
     height: 90%;
 }
+#GenderPieChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+#PrefferedOfferTypePieChart{
+    width: 100% !important;
+    height: 100% !important;
+}
+
 
 #pigraph > p{
     margin: 0px;

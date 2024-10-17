@@ -4,11 +4,11 @@ import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 import { Link } from "react-router-dom";
 import GenderPieChart from '../charts/gender_pie_chart.png';
-import PrefferedOfferTypePieChart from '../charts/preffered_offer_type_pie_chart.png';
-import MembershipCategoryBarGraph from '../charts/membership_category_bar_graph.png';
+import PrefferedOfferTypePieChart from '../charts/preferred_offer_types_pie_chart.png';
+import MembershipCategoryBarGraph from '../charts/memebership_category_bar_chart.png';
 import ChurnRiskScoreBarGraph from '../charts/churn_risk_score_bar_graph.png';
 import PointsInWalletHistogram from '../charts/points_in_wallet_histogram.png';
-import FeedbackBarGraph from '../charts/feedback_bar_graph.png';
+import FeedbackBarGraph from '../charts/feedback_bar_chart.png';
 import kpi2_logo from '../resources/kpi2_logo.png';
 import kpi3_logo from '../resources/kpi3_logo.png';
 import kpi4_logo from '../resources/kpi4_logo.png';
@@ -16,6 +16,17 @@ import speed1 from '../resources/speed1.png';
 import speed2 from '../resources/speed2.png';
 import speed3 from '../resources/speed3.png';
 import speed4 from '../resources/speed4.png';
+
+
+import GenderPieChartChurn from '../charts/gender_churning_pie_chart.png';
+import PrefferedOfferTypePieChartChurn from '../charts/preferred_offer_types_churning_pie_chart.png';
+import MembershipCategoryBarGraphChurn from '../charts/memebership_category_churning_bar_chart.png';
+import FeedbackBarGraphChurn from '../charts/feedback_churning_bar_chart.png';
+import PointsInWalletHistogramChurn from '../charts/points_in_wallet_churning_histogram.png';
+import ChurnRiskScoreBarGraphChurn from '../charts/churn_risk_score_churning_bar_graph.png';
+
+
+
 function Homepage() {
 
     
@@ -91,6 +102,12 @@ function Homepage() {
             document.querySelectorAll('#kpi_info h2')[3].innerText = '20 min';
             document.querySelector('#kpi #kpi_logo').src = speed4;
             document.querySelector('#kpi #kpi_logo').alt = 'speed4';
+            document.querySelector('#GenderPieChart').src = GenderPieChartChurn;
+            document.querySelector('#MembershipCategoryBarGraph').src = MembershipCategoryBarGraphChurn;
+            document.querySelector('#FeedbackBarGraph').src = FeedbackBarGraphChurn;
+            document.querySelector('#PrefferedOfferTypePieChart').src = PrefferedOfferTypePieChartChurn;
+            document.querySelector('#ChurnRiskScoreBarGraph').src = ChurnRiskScoreBarGraphChurn;
+            document.querySelector('#PointsInWalletHistogram').src=PointsInWalletHistogramChurn;
         }
         else {
             document.querySelector('#kpi_info h2').innerText = '24%';
@@ -99,6 +116,12 @@ function Homepage() {
             document.querySelectorAll('#kpi_info h2')[3].innerText = '32 min';
             document.querySelector('#kpi #kpi_logo').src = speed2;
             document.querySelector('#kpi #kpi_logo').alt = 'speed2';
+            document.querySelector('#GenderPieChart').src = GenderPieChart;
+            document.querySelector('#MembershipCategoryBarGraph').src = MembershipCategoryBarGraph;
+            document.querySelector('#FeedbackBarGraph').src = FeedbackBarGraph;
+            document.querySelector('#PrefferedOfferTypePieChart').src = PrefferedOfferTypePieChart;
+            document.querySelector('#ChurnRiskScoreBarGraph').src = ChurnRiskScoreBarGraph;
+            document.querySelector('#PointsInWalletHistogram').src=PointsInWalletHistogram;
         }
     };
 
@@ -135,7 +158,7 @@ function Homepage() {
                 </div>
                 <div id='kpi'>
                     <div id='kpi_info'>
-                    <h3>Average Login Frequency Days</h3>
+                    <h3 >Average Login Frequency Days</h3>
                     <h2>15</h2>
                     </div>
                     <img src={kpi3_logo} id="kpi_logo" />

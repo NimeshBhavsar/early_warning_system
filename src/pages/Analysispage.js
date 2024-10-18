@@ -41,7 +41,7 @@ import AvgFreqVsUsedSpecialDiscountLolipop from '../charts/avg_frequency_login_d
 import AvgFreqVsOfferApplicationPreferenceLolipop from '../charts/avg_frequency_login_days Vs offer_application_preference_lollipop.png';
 import AvgFreqVsRegionCategoryLolipop from '../charts/avg_frequency_login_days Vs region_category_lollipop.png';
 import AvgFreqVsFeedbackLolipop from '../charts/avg_frequency_login_days Vs feedback_lollipop.png';
-import AvgFreqVsMediumOfOperationLolipop from '../charts/avg_frequency_login_days Vs medium_of_operation_lollipop.png';
+import AvgFreqVsMediumOfOperationLolipop from '../charts/avg_frequency_login_days Vs membership_category_lollipop.png';
 import AvgFreqVsPrefferedOfferTypeLolipop from '../charts/avg_frequency_login_days Vs preferred_offer_types_lollipop.png';
 import AvgFreqVsInternetOptionLolipop from '../charts/avg_frequency_login_days Vs internet_option_lollipop.png';
 import AvgFreqVsComplaintStatusLolipop from '../charts/avg_frequency_login_days Vs complaint_status_lollipop.png';

@@ -7,6 +7,9 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Analysispage from "./pages/Analysispage";
+import GenderPieChart from './components/GenderPieChart';
+import CategoricalAnalysis from './components/CategoricalAnalysis';
+import Analysispage1 from './pages/Analysispage copy';
 
 function App() {
   return (
@@ -43,6 +46,8 @@ function App() {
               <Routes>
                 <Route exact path="/" element={<Homepage></Homepage>} />
                 <Route path="/analysis" element={<Analysispage />} />
+                <Route path="/temp1" element={<Analysispage1 />} />
+                <Route path="/temp2" element={<CategoricalAnalysis />} />
               </Routes>
             </div>
           </div>

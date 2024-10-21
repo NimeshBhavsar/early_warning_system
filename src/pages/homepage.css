@@ -54,7 +54,7 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-#kpi_info{
+.kpi_info{
     width: 70%;
     height: 80%;
     display: flex;
@@ -147,11 +147,11 @@ h2 {
 }
 #GenderPieChart{
     width: 100% !important;
-    height: 100% !important;
+    height: 80% !important;
 }
 #PrefferedOfferTypePieChart{
     width: 100% !important;
-    height: 100% !important;
+    height: 80% !important;
 }
 
 
@@ -199,4 +199,31 @@ h2 {
     height: 90%;
 }
 
+
+.kpi_info {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-column: 1;
+    grid-row: 2;
+    grid-gap: 0px 0px;
+    align-items: center;
+    height: 100%;
+}
+#kpi_info h3{
+    padding: 20px;
+  font-size: 30px;
+  text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#kpi_info h2{
+    padding: 20px;
+  font-size: 30px;
+  text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
 

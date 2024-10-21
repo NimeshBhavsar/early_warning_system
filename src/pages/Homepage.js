@@ -12,9 +12,7 @@ import FeedbackBarGraph from '../charts/feedback_bar_chart.png';
 import kpi2_logo from '../resources/kpi2_logo.png';
 import kpi3_logo from '../resources/kpi3_logo.png';
 import kpi4_logo from '../resources/kpi4_logo.png';
-import speed1 from '../resources/speed1.png';
 import speed2 from '../resources/speed2.png';
-import speed3 from '../resources/speed3.png';
 import speed4 from '../resources/speed4.png';
 
 
@@ -96,10 +94,10 @@ function Homepage() {
         console.log(event.target.checked);
         console.log(document.querySelector('#kpi_info h2'));
         if (event.target.checked) {
-            document.querySelector('#kpi_info h2').innerText = '100%';
-            document.querySelectorAll('#kpi_info h2')[1].innerText = '$2019';
-            document.querySelectorAll('#kpi_info h2')[2].innerText = '20';
-            document.querySelectorAll('#kpi_info h2')[3].innerText = '20 min';
+            document.querySelector('#kpival1').innerText = '100%';
+            document.querySelector('#kpival2').innerText = '$25,550';
+            document.querySelector('#kpival3').innerText = '15';
+            document.querySelector('#kpival4').innerText = '3.6 min';
             document.querySelector('#kpi #kpi_logo').src = speed4;
             document.querySelector('#kpi #kpi_logo').alt = 'speed4';
             document.querySelector('#GenderPieChart').src = GenderPieChartChurn;
@@ -110,10 +108,10 @@ function Homepage() {
             document.querySelector('#PointsInWalletHistogram').src=PointsInWalletHistogramChurn;
         }
         else {
-            document.querySelector('#kpi_info h2').innerText = '24%';
-            document.querySelectorAll('#kpi_info h2')[1].innerText = '$3019';
-            document.querySelectorAll('#kpi_info h2')[2].innerText = '15';
-            document.querySelectorAll('#kpi_info h2')[3].innerText = '32 min';
+            document.querySelector('#kpival1').innerText = '84%';
+            document.querySelector('#kpival2').innerText = '$29,387';
+            document.querySelector('#kpival3').innerText = '13';
+            document.querySelector('#kpival4').innerText = '3.7 min';
             document.querySelector('#kpi #kpi_logo').src = speed2;
             document.querySelector('#kpi #kpi_logo').alt = 'speed2';
             document.querySelector('#GenderPieChart').src = GenderPieChart;
@@ -143,30 +141,30 @@ function Homepage() {
 
             <div id='kpi_div'>
                 <div id='kpi'>
-                    <div id='kpi_info'>
+                    <div id='kpi_info1' className="kpi_info">
                     <h3>Customer Churn Risk</h3>
-                    <h2>24%</h2>
+                    <h2 id='kpival1'>84%</h2>
                     </div>
                     <img src={speed2} id="kpi_logo" alt="speed2"/>
                 </div>
                 <div id='kpi'>
-                    <div id='kpi_info'>
+                    <div id='kpi_info2' className="kpi_info">
                     <h3>Average Transaction</h3>
-                    <h2>$3019</h2>
+                    <h2 id="kpival2">$29,387</h2>
                     </div>
                     <img src={kpi2_logo} id="kpi_logo" />
                 </div>
                 <div id='kpi'>
-                    <div id='kpi_info'>
+                    <div id='kpi_info3' className="kpi_info">
                     <h3 >Average Login Frequency Days</h3>
-                    <h2>15</h2>
+                    <h2 id="kpival3">13</h2>
                     </div>
                     <img src={kpi3_logo} id="kpi_logo" />
                 </div>
                 <div id='kpi'>
-                    <div id='kpi_info'>
-                    <h3>Average Time Spent</h3>
-                    <h2>32 min</h2>
+                    <div id='kpi_info4' className="kpi_info">
+                    <h3>Average Time Spent(Daily)</h3>
+                    <h2 id="kpival4">3.7 min</h2>
                     </div>
                     <img src={kpi4_logo} id="kpi_logo" />
                 </div>

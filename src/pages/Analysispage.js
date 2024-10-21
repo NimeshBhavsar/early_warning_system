@@ -68,13 +68,13 @@ function Analysispage() {
     
     
 
-    const [dropdownValue1, setDropdownValue1] = useState('');
+    const [dropdownValue1, setDropdownValue1] = useState('self');
 
     const handleChange1 = (event) => {
         setDropdownValue1(event.target.value);
     };
 
-    const [dropdownValue2, setDropdownValue2] = useState('');
+    const [dropdownValue2, setDropdownValue2] = useState('age');
 
     const handleChange2 = (event) => {
         setDropdownValue2(event.target.value);
@@ -251,6 +251,7 @@ function Analysispage() {
                         
                         <div id="output_chart">
                             <img src={ChurnRiskScoreBarGraph} alt='placeholder' />
+                            {/* <GenderPieChart/> */}
                         </div>
 
                         <form id='form_input2'>

@@ -124,7 +124,7 @@ function Homepage() {
     };
 
     const navigateToAnalysis = (chartType) => {
-        window.history.pushState({}, '', `/analysis?chart=${chartType}`);
+        window.history.pushState({}, '', `/temp1?chart=${chartType}`);
         const navEvent = new PopStateEvent('popstate');
         window.dispatchEvent(navEvent);
     };

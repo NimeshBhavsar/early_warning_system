@@ -35,7 +35,7 @@ function App() {
                 <img id='Homelogo' src={Homelogo} alt="Home Logo" />
               </Link>
 
-              <Link to="/analysis">
+              <Link to="/temp1">
                 <img id='Analysislogo' src={Analysislogo} alt="Analysis Logo" />
               </Link>
             </nav>

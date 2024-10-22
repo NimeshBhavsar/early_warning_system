@@ -23,10 +23,16 @@ function Analysispage1() {
     const [churning, setChurningValue] = useState('all');
     const handleChangeChurning = (event) => {
         setChurningValue(event.target.value);
+        setDropdownValue1('self');
+        setDropdownValue2('age');
+        setGenderFilter('all');
     }
     const [genderfilter, setGenderFilter] = useState('all');
     const handleGenderFilterValue = (event) => {
         setGenderFilter(event.target.value);
+        setDropdownValue1('self');
+        setDropdownValue2('age');
+        setChurningValue('all');
     }
 
 
@@ -50,7 +56,6 @@ const change_chart_img = (t1, t2, c1, g1) => {
     var imgElement = document.querySelector('#alternate_chart2 img');
     newImageSrc = `/graph_1/${t1}_${t2}_chart2_${c1}_${g1}.png`;
     imgElement.src = newImageSrc;
-    imgElement.alt = `Image showing ${t1}, ${t2}, chart1 with ${c1}, ${g1}`;
 
 
 };
@@ -133,7 +138,7 @@ const change_chart_img = (t1, t2, c1, g1) => {
                         </form>
                         
                         <div id="output_chart">
-                            <img src={ChurnRiskScoreBarGraph} alt='placeholder' />
+                            <img src={ChurnRiskScoreBarGraph} alt='Images to be updated soon' />
                             {/* <GenderPieChart/> */}
                         </div>
 
@@ -170,10 +175,10 @@ const change_chart_img = (t1, t2, c1, g1) => {
                 <div id="inner_container3">
                     <div id="alternate_chart_container">
                         <div id="alternate_chart1" onClick={handleAlt1Change}>
-                            <img src={'/graph_1/self_age_chart1_all_all.png'} alt='placeholder' />
+                            <img src={'/graph_1/self_age_chart1_all_all.png'} alt='Images to be updated soon' />
                         </div>
                         <div id="alternate_chart2" onClick={handleAlt2Change}>
-                            <img src={'/graph_1/self_age_chart1_all_all.png'} alt='placeholder' />
+                            <img src={'/graph_1/self_age_chart1_all_all.png'} alt='Images to be updated soon' />
                         </div>
                     </div>
                 </div>

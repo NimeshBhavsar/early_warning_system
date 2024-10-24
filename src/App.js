@@ -18,7 +18,7 @@ function App() {
         <div className="app-container">
           {/* Header */}
           <header className="header">
-            <img id='thdlogo' src={thdlogo} alt="THD Logo" />
+            {/* <img id='thdlogo' src={thdlogo} alt="THD Logo" /> */}
 
 
             <h1>Early Warning System</h1>
